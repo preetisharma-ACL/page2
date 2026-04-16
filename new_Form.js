@@ -38,7 +38,7 @@ async function handleFormSubmit(formId) {
     const name = form.querySelector('[name="form_name"]')?.value.trim() || "";
     const phone = form.querySelector('[name="form_mobile"]')?.value.trim() || "";
     const city = form.querySelector('[name="form_city"]')?.value.trim() || "";
-    const select = form.querySelector('[name="form_email"]')?.value.trim() || "";
+    const email = form.querySelector('[name="form_email"]')?.value.trim() || "";
 
     // Validation for missing fields
     let missingFields = [];
@@ -73,8 +73,8 @@ async function handleFormSubmit(formId) {
     }
 
     const payload = {
-      page_url: "https://brochure-2.woodsbarog.com",
-      project_name: "thewoodsbarog",
+      page_url: "",
+      project_name: "Crestoria Estate by L&T Realty",
       form_name: name,
       form_mobile: phone,
       form_city: city,
